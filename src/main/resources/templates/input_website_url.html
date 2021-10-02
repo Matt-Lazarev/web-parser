@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Website Parser</title>
+</head>
+
+<style>
+    .error_block {
+        color: red;
+    }
+</style>
+
+<body>
+    <form th:action="@{/parser}" th:method="post" th:object="${website}">
+        <div>
+            <label for="url_input">URL</label>
+            <div class="error_block" th:if="${#fields.hasErrors('url')}"
+                 th:errors="*{url}">
+                Error
+            </div>
+            <input id="url_input" type="text" placeholder="Enter website url" th:field="*{url}">
+        </div>
+        <div>
+            <button type="submit">Parse!</button>
+        </div>
+    </form>
+</body>
+</html>

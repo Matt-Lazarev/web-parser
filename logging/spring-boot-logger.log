@@ -1,0 +1,37 @@
+2021-10-02 20:30:56,573 INFO c.p.webparser.WebparserApplication [main]: Starting WebparserApplication using Java 15.0.2 on MSI with PID 9668 (C:\Users\Матвей\IdeaProjects\webparser\target\classes started by Матвей in C:\Users\Матвей\IdeaProjects\webparser)
+2021-10-02 20:30:56,588 INFO c.p.webparser.WebparserApplication [main]: The following profiles are active: prod
+2021-10-02 20:30:57,777 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main]: Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-10-02 20:30:57,902 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main]: Finished Spring Data repository scanning in 120 ms. Found 3 JPA repository interfaces.
+2021-10-02 20:30:58,788 INFO o.s.b.w.e.tomcat.TomcatWebServer [main]: Tomcat initialized with port(s): 8080 (http)
+2021-10-02 20:30:58,804 INFO o.a.catalina.core.StandardService [main]: Starting service [Tomcat]
+2021-10-02 20:30:58,804 INFO o.a.catalina.core.StandardEngine [main]: Starting Servlet engine: [Apache Tomcat/9.0.53]
+2021-10-02 20:30:59,019 INFO o.a.c.c.C.[Tomcat].[localhost].[/] [main]: Initializing Spring embedded WebApplicationContext
+2021-10-02 20:30:59,019 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main]: Root WebApplicationContext: initialization completed in 2320 ms
+2021-10-02 20:30:59,300 INFO o.h.jpa.internal.util.LogHelper [main]: HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-10-02 20:30:59,379 INFO org.hibernate.Version [main]: HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-10-02 20:30:59,597 INFO o.h.annotations.common.Version [main]: HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-10-02 20:30:59,785 INFO com.zaxxer.hikari.HikariDataSource [main]: HikariPool-1 - Starting...
+2021-10-02 20:31:00,238 INFO com.zaxxer.hikari.HikariDataSource [main]: HikariPool-1 - Start completed.
+2021-10-02 20:31:00,254 INFO org.hibernate.dialect.Dialect [main]: HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-10-02 20:31:01,800 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main]: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-10-02 20:31:01,816 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [main]: Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-02 20:31:02,457 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main]: spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-10-02 20:31:03,004 INFO o.s.b.w.e.tomcat.TomcatWebServer [main]: Tomcat started on port(s): 8080 (http) with context path ''
+2021-10-02 20:31:03,019 INFO c.p.webparser.WebparserApplication [main]: Started WebparserApplication in 7.505 seconds (JVM running for 8.959)
+2021-10-02 20:33:08,871 INFO o.a.c.c.C.[Tomcat].[localhost].[/] [http-nio-8080-exec-1]: Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-10-02 20:33:08,871 INFO o.s.web.servlet.DispatcherServlet [http-nio-8080-exec-1]: Initializing Servlet 'dispatcherServlet'
+2021-10-02 20:33:08,871 INFO o.s.web.servlet.DispatcherServlet [http-nio-8080-exec-1]: Completed initialization in 0 ms
+2021-10-02 20:33:11,339 INFO c.p.w.aop.LoggingWebsiteController [http-nio-8080-exec-3]: Trying to save 'https://www.microsoft.com' url to DB 'websites'
+2021-10-02 20:33:15,911 INFO c.p.w.aop.LoggingWebsiteController [http-nio-8080-exec-3]: Website 'https://www.microsoft.com' successfully saved to DB 'websites'
+2021-10-02 20:33:15,958 INFO c.p.w.a.LoggingStatisticsController [http-nio-8080-exec-4]: Trying to get statistics for 'null' website
+2021-10-02 20:33:16,177 INFO c.p.w.a.LoggingStatisticsController [http-nio-8080-exec-4]: Statistics for 'null' successfully sent
+2021-10-02 20:33:23,232 INFO c.p.w.aop.LoggingWebsiteController [http-nio-8080-exec-7]: Trying to save 'https://www.google.com' url to DB 'websites'
+2021-10-02 20:33:23,873 ERROR c.p.w.aop.LoggingWebsiteController [http-nio-8080-exec-7]: Exception occurred during saving 'https://www.google.com'. ERROR: HTTP error fetching URL. Status=429, URL=[https://www.google.com/sorry/index?continue=https://www.google.com/&q=EgRb6_X9GOKv4ooGIhAPhNkQIBmuBhJsh60q4tuSMgFy]
+2021-10-02 20:34:05,195 INFO c.p.w.aop.LoggingWebsiteController [http-nio-8080-exec-9]: Trying to save 'https://vk.com' url to DB 'websites'
+2021-10-02 20:34:06,649 INFO c.p.w.aop.LoggingWebsiteController [http-nio-8080-exec-9]: Website 'https://vk.com' successfully saved to DB 'websites'
+2021-10-02 20:34:06,678 INFO c.p.w.a.LoggingStatisticsController [http-nio-8080-exec-10]: Trying to get statistics for 'null' website
+2021-10-02 20:34:06,741 INFO c.p.w.a.LoggingStatisticsController [http-nio-8080-exec-10]: Statistics for 'null' successfully sent
+2021-10-02 20:34:53,254 INFO c.p.w.aop.LoggingWebsiteController [http-nio-8080-exec-4]: Trying to save 'https://github.com/marketplace' url to DB 'websites'
+2021-10-02 20:34:58,363 INFO c.p.w.aop.LoggingWebsiteController [http-nio-8080-exec-4]: Website 'https://github.com/marketplace' successfully saved to DB 'websites'
+2021-10-02 20:34:58,395 INFO c.p.w.a.LoggingStatisticsController [http-nio-8080-exec-5]: Trying to get statistics for 'null' website
+2021-10-02 20:34:58,563 INFO c.p.w.a.LoggingStatisticsController [http-nio-8080-exec-5]: Statistics for 'null' successfully sent

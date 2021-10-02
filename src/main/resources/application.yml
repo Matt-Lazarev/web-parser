@@ -1,0 +1,43 @@
+server:
+  port: 8080
+
+
+spring:
+  profiles:
+    active: dev
+
+---
+#H2 DataBase
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    password: 12345
+    url: jdbc:h2:mem:testdb
+    username: sa
+  h2:
+    console:
+      enabled: true
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+  config:
+    activate:
+      on-profile: dev
+
+
+---
+#MySQL
+spring:
+  datasource:
+    password: Lazarev
+    url: jdbc:mysql://localhost:3306/parser_db?serverTimezone=UTC
+    username: Matvey
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+    show-sql: true
+  config:
+    activate:
+      on-profile: prod
