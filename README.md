@@ -14,7 +14,7 @@ To use this application API just enter website URL you want to parse.</h3>
 
 <hr>
 <h3>How to use</h3>
-<p  align="justify"><b>Applications start on localhost and 8080 port by default. To get started you, you need to go to address localhost:8080/parser and then enter the website URL:</b></p>
+<p  align="justify"><b>Applications start on localhost and 8080 port by default. To get started, you need to go to address localhost:8080/parser and then enter the website URL:</b></p>
  <p align="center">
   <img src="https://user-images.githubusercontent.com/70879589/138313275-8373ce8d-4d87-415f-bb22-b746bed0b05b.png" />
 </p>
