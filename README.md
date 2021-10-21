@@ -27,5 +27,6 @@ To use this application API just enter website URL you want to parse.</h3>
 <hr>
 <h3>Database schema:</h3>
  <p align="center">
-  <img src="https://user-images.githubusercontent.com/70879589/138315198-0d8fabe6-4956-4066-9132-1fe3065ec2df.png" />
+  <img src="https://user-images.githubusercontent.com/70879589/138327409-2e9b2877-9260-45cd-ba49-6d6b65d4aa9e.png" />
 </p>
+
